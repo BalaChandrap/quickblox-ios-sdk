@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="callButton" destination="4" id="18"/>
+                <outlet property="callingActivityIndicator" destination="26" id="37"/>
+                <outlet property="finishCallButton" destination="6qL-hM-thQ" id="w1S-qx-r9f"/>
+                <outlet property="opponentTextField" destination="4HL-aS-kfd" id="gGF-kk-g9M"/>
+                <outlet property="opponentVideoView" destination="jd3-dT-vST" id="z1Z-n4-SPc"/>
+                <outlet property="ringigngLabel" destination="17" id="21"/>
+                <outlet property="startingCallActivityIndicator" destination="35" id="36"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="jd3-dT-vST" customClass="QBVideoView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </view>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cio-Hb-PGq">
+                    <rect key="frame" x="209" y="298" width="91" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Face"/>
+                        <segment title="Back"/>
+                    </segments>
+                    <connections>
+                        <action selector="cameraModeChanged:" destination="-1" eventType="valueChanged" id="jck-Gf-YBq"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="60" y="57" width="168" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="hHe-3d-OY0"/>
+                    </constraints>
+                    <state key="normal" title="Call to opponent">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="callButtonTouched:" destination="-1" eventType="touchUpInside" id="eLu-bx-XhO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGe-EJ-NnC">
+                    <rect key="frame" x="264" y="18" width="49" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutTouched:" destination="-1" eventType="touchUpInside" id="c7h-3R-TWq"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-hM-thQ">
+                    <rect key="frame" x="93" y="422" width="144" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="E0j-0k-i2x"/>
+                        <constraint firstAttribute="width" constant="144" id="I1E-de-Wkz"/>
+                    </constraints>
+                    <state key="normal" title="Finish Call">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="finishCallButtonTouched:" destination="-1" eventType="touchUpInside" id="ubH-jf-Kby"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Calling..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                    <rect key="frame" x="120" y="377" width="90" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="l67-Hs-Z2J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="26" userLabel="Calling Activity Indicator">
+                    <rect key="frame" x="155" y="314" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYi-XR-O6E">
+                    <rect key="frame" x="9" y="298" width="93" height="116"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="142" y="136" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" red="1" green="0.86173739989999998" blue="0.4776434121" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="opponent user id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4HL-aS-kfd">
+                    <rect key="frame" x="20" y="18" width="229" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ztt-f5-qmU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iYi-XR-O6E" secondAttribute="trailing" constant="218" id="5id-my-ZPK"/>
+                <constraint firstItem="jd3-dT-vST" firstAttribute="centerX" secondItem="35" secondAttribute="centerX" id="75L-07-WkD"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="92" id="BxD-oA-vGp"/>
+                <constraint firstAttribute="centerX" secondItem="26" secondAttribute="centerX" constant="-5" id="G3q-f3-foA"/>
+                <constraint firstAttribute="centerX" secondItem="35" secondAttribute="centerX" constant="-0.5" id="H0Q-4a-lbF"/>
+                <constraint firstAttribute="trailing" secondItem="17" secondAttribute="trailing" constant="110" id="K8d-kp-nhv"/>
+                <constraint firstItem="4HL-aS-kfd" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="MBK-d2-gUv"/>
+                <constraint firstAttribute="centerY" secondItem="35" secondAttribute="centerY" constant="85.5" id="Ndo-mw-iBX"/>
+                <constraint firstItem="AGe-EJ-NnC" firstAttribute="height" secondItem="4HL-aS-kfd" secondAttribute="height" id="Pyd-go-acp"/>
+                <constraint firstItem="4HL-aS-kfd" firstAttribute="top" secondItem="1" secondAttribute="top" constant="18" id="S43-ZY-Lou"/>
+                <constraint firstItem="6qL-hM-thQ" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="8" id="S91-MD-NMr"/>
+                <constraint firstItem="jd3-dT-vST" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Tko-dX-ZvC"/>
+                <constraint firstItem="iYi-XR-O6E" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="9" id="V36-5a-7wG"/>
+                <constraint firstItem="jd3-dT-vST" firstAttribute="bottom" secondItem="6qL-hM-thQ" secondAttribute="bottom" id="VeK-Ky-xul"/>
+                <constraint firstItem="6qL-hM-thQ" firstAttribute="top" secondItem="cio-Hb-PGq" secondAttribute="bottom" constant="96" id="Yaq-W9-ifV"/>
+                <constraint firstAttribute="bottom" secondItem="6qL-hM-thQ" secondAttribute="bottom" id="Yhh-xu-m40"/>
+                <constraint firstAttribute="trailing" secondItem="cio-Hb-PGq" secondAttribute="trailing" constant="20" symbolic="YES" id="adg-ss-2Wf"/>
+                <constraint firstItem="6qL-hM-thQ" firstAttribute="top" secondItem="iYi-XR-O6E" secondAttribute="bottom" constant="8" symbolic="YES" id="g1G-dY-NiK"/>
+                <constraint firstAttribute="trailing" secondItem="6qL-hM-thQ" secondAttribute="trailing" constant="83" id="iY9-qM-5Hl"/>
+                <constraint firstItem="cio-Hb-PGq" firstAttribute="top" secondItem="iYi-XR-O6E" secondAttribute="top" id="qRd-Jj-JDs"/>
+                <constraint firstItem="17" firstAttribute="top" secondItem="26" secondAttribute="bottom" constant="43" id="qZW-sN-kKN"/>
+                <constraint firstItem="jd3-dT-vST" firstAttribute="top" secondItem="1" secondAttribute="top" id="qsO-fW-gq1"/>
+                <constraint firstItem="AGe-EJ-NnC" firstAttribute="leading" secondItem="4HL-aS-kfd" secondAttribute="trailing" constant="15" id="srI-5f-MWP"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="60" id="tJs-uc-Bk4"/>
+                <constraint firstAttribute="trailing" secondItem="AGe-EJ-NnC" secondAttribute="trailing" constant="7" id="tXO-pu-cgq"/>
+                <constraint firstItem="AGe-EJ-NnC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="18" id="vME-vr-F93"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="iYi-XR-O6E" secondAttribute="trailing" constant="18" id="w3a-xS-zSU"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="4HL-aS-kfd" secondAttribute="bottom" constant="9" id="x2f-tf-Z4r"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
