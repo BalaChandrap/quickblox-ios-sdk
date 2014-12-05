@@ -12,11 +12,11 @@
 		43658AF11603174E000F6748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43658AF01603174E000F6748 /* CoreGraphics.framework */; };
 		43658AF71603174E000F6748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43658AF51603174E000F6748 /* InfoPlist.strings */; };
 		43658AF91603174E000F6748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43658AF81603174E000F6748 /* main.m */; };
-		43658AFD1603174E000F6748 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43658AFC1603174E000F6748 /* AppDelegate.m */; };
-		43658B3B16031D8D000F6748 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B3916031D8D000F6748 /* MainViewController.xib */; };
-		43658B4E16031FC8000F6748 /* NoteDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B4C16031FC8000F6748 /* NoteDetailsViewController.xib */; };
-		43658B5316031FE7000F6748 /* NewNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B5116031FE7000F6748 /* NewNoteViewController.xib */; };
-		43658B5A16032572000F6748 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B5816032572000F6748 /* SplashViewController.xib */; };
+		43658AFD1603174E000F6748 /* SSCOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43658AFC1603174E000F6748 /* SSCOAppDelegate.m */; };
+		43658B3B16031D8D000F6748 /* SSCOMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B3916031D8D000F6748 /* SSCOMainViewController.xib */; };
+		43658B4E16031FC8000F6748 /* SSCONoteDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B4C16031FC8000F6748 /* SSCONoteDetailsViewController.xib */; };
+		43658B5316031FE7000F6748 /* SSCONewNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B5116031FE7000F6748 /* SSCONewNoteViewController.xib */; };
+		43658B5A16032572000F6748 /* SSCOSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658B5816032572000F6748 /* SSCOSplashViewController.xib */; };
 		43E141461603340300891AD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E141451603340300891AD7 /* CoreData.framework */; };
 		43E141481603341200891AD7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E141471603341200891AD7 /* CoreLocation.framework */; };
 		43E1414A1603341E00891AD7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E141491603341E00891AD7 /* MobileCoreServices.framework */; };
@@ -28,13 +28,14 @@
 		BF011E71178967DF0076CA3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF011E70178967DE0076CA3B /* QuartzCore.framework */; };
 		BF6860EB1976C36000496FFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6860EA1976C36000496FFB /* Images.xcassets */; };
 		BFA23414184365D500A6714D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA23413184365D500A6714D /* Security.framework */; };
+		BFFCF7A919AE28D80065AE21 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF7A819AE28D80065AE21 /* Quickblox.framework */; };
 		ED6EE5F1167734CB004BCAC7 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6EE5F0167734CB004BCAC7 /* Quickblox.framework */; };
-		FA876505160875E400EB1B58 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764F9160875E400EB1B58 /* MainViewController.m */; };
-		FA876506160875E400EB1B58 /* NewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764FC160875E400EB1B58 /* NewNoteViewController.m */; };
-		FA876507160875E400EB1B58 /* NoteDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764FF160875E400EB1B58 /* NoteDetailsViewController.m */; };
-		FA876508160875E400EB1B58 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA876502160875E400EB1B58 /* SplashViewController.m */; };
+		FA876505160875E400EB1B58 /* SSCOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764F9160875E400EB1B58 /* SSCOMainViewController.m */; };
+		FA876506160875E400EB1B58 /* SSCONewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764FC160875E400EB1B58 /* SSCONewNoteViewController.m */; };
+		FA876507160875E400EB1B58 /* SSCONoteDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8764FF160875E400EB1B58 /* SSCONoteDetailsViewController.m */; };
+		FA876508160875E400EB1B58 /* SSCOSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA876502160875E400EB1B58 /* SSCOSplashViewController.m */; };
 		FA87650D1608762900EB1B58 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87650C1608762900EB1B58 /* CustomTableViewCell.m */; };
-		FA876514160877CC00EB1B58 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA876513160877CC00EB1B58 /* DataManager.m */; };
+		FA876514160877CC00EB1B58 /* SSCONotesStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA876513160877CC00EB1B58 /* SSCONotesStorage.m */; };
 		FAC8B9CD16D2D03600F03311 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8B9CC16D2D03600F03311 /* AVFoundation.framework */; };
 		FAC8B9CF16D2D03C00F03311 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8B9CE16D2D03C00F03311 /* AudioToolbox.framework */; };
 		FAC8B9D116D2D04300F03311 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8B9D016D2D04300F03311 /* CoreVideo.framework */; };
@@ -51,12 +52,12 @@
 		43658AF61603174E000F6748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43658AF81603174E000F6748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43658AFA1603174E000F6748 /* SimpleSample-custom-object-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSample-custom-object-ios-Prefix.pch"; sourceTree = "<group>"; };
-		43658AFB1603174E000F6748 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		43658AFC1603174E000F6748 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43658B3916031D8D000F6748 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		43658B4C16031FC8000F6748 /* NoteDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteDetailsViewController.xib; sourceTree = "<group>"; };
-		43658B5116031FE7000F6748 /* NewNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewNoteViewController.xib; sourceTree = "<group>"; };
-		43658B5816032572000F6748 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		43658AFB1603174E000F6748 /* SSCOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCOAppDelegate.h; sourceTree = "<group>"; };
+		43658AFC1603174E000F6748 /* SSCOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCOAppDelegate.m; sourceTree = "<group>"; };
+		43658B3916031D8D000F6748 /* SSCOMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSCOMainViewController.xib; sourceTree = "<group>"; };
+		43658B4C16031FC8000F6748 /* SSCONoteDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSCONoteDetailsViewController.xib; sourceTree = "<group>"; };
+		43658B5116031FE7000F6748 /* SSCONewNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSCONewNoteViewController.xib; sourceTree = "<group>"; };
+		43658B5816032572000F6748 /* SSCOSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSCOSplashViewController.xib; sourceTree = "<group>"; };
 		43E141451603340300891AD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		43E141471603341200891AD7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		43E141491603341E00891AD7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -68,19 +69,20 @@
 		BF011E70178967DE0076CA3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF6860EA1976C36000496FFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFA23413184365D500A6714D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BFFCF7A819AE28D80065AE21 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
 		ED6EE5F0167734CB004BCAC7 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
-		FA8764F8160875E400EB1B58 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		FA8764F9160875E400EB1B58 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		FA8764FB160875E400EB1B58 /* NewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewNoteViewController.h; sourceTree = "<group>"; };
-		FA8764FC160875E400EB1B58 /* NewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewNoteViewController.m; sourceTree = "<group>"; };
-		FA8764FE160875E400EB1B58 /* NoteDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailsViewController.h; sourceTree = "<group>"; };
-		FA8764FF160875E400EB1B58 /* NoteDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailsViewController.m; sourceTree = "<group>"; };
-		FA876501160875E400EB1B58 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		FA876502160875E400EB1B58 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		FA8764F8160875E400EB1B58 /* SSCOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCOMainViewController.h; sourceTree = "<group>"; };
+		FA8764F9160875E400EB1B58 /* SSCOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCOMainViewController.m; sourceTree = "<group>"; };
+		FA8764FB160875E400EB1B58 /* SSCONewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCONewNoteViewController.h; sourceTree = "<group>"; };
+		FA8764FC160875E400EB1B58 /* SSCONewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCONewNoteViewController.m; sourceTree = "<group>"; };
+		FA8764FE160875E400EB1B58 /* SSCONoteDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCONoteDetailsViewController.h; sourceTree = "<group>"; };
+		FA8764FF160875E400EB1B58 /* SSCONoteDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCONoteDetailsViewController.m; sourceTree = "<group>"; };
+		FA876501160875E400EB1B58 /* SSCOSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCOSplashViewController.h; sourceTree = "<group>"; };
+		FA876502160875E400EB1B58 /* SSCOSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCOSplashViewController.m; sourceTree = "<group>"; };
 		FA87650B1608762900EB1B58 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		FA87650C1608762900EB1B58 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		FA876512160877CC00EB1B58 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = "SimpleSample-custom-object-ios/Classes/DataManager.h"; sourceTree = SOURCE_ROOT; };
-		FA876513160877CC00EB1B58 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = "SimpleSample-custom-object-ios/Classes/DataManager.m"; sourceTree = SOURCE_ROOT; };
+		FA876512160877CC00EB1B58 /* SSCONotesStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCONotesStorage.h; path = "SimpleSample-custom-object-ios/Classes/SSCONotesStorage.h"; sourceTree = SOURCE_ROOT; };
+		FA876513160877CC00EB1B58 /* SSCONotesStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCONotesStorage.m; path = "SimpleSample-custom-object-ios/Classes/SSCONotesStorage.m"; sourceTree = SOURCE_ROOT; };
 		FAC8B9CC16D2D03600F03311 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FAC8B9CE16D2D03C00F03311 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FAC8B9D016D2D04300F03311 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA23414184365D500A6714D /* Security.framework in Frameworks */,
+				BFFCF7A919AE28D80065AE21 /* Quickblox.framework in Frameworks */,
 				BF011E71178967DF0076CA3B /* QuartzCore.framework in Frameworks */,
 				43658AF11603174E000F6748 /* CoreGraphics.framework in Frameworks */,
 				FAC8B9D516D2D04F00F03311 /* Accelerate.framework in Frameworks */,
@@ -139,6 +142,7 @@
 		43658AEB1603174E000F6748 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFFCF7A819AE28D80065AE21 /* Quickblox.framework */,
 				BFA23413184365D500A6714D /* Security.framework */,
 				BF011E70178967DE0076CA3B /* QuartzCore.framework */,
 				FAC8B9D416D2D04F00F03311 /* Accelerate.framework */,
@@ -165,8 +169,8 @@
 		43658AF21603174E000F6748 /* SimpleSample-custom-object-ios */ = {
 			isa = PBXGroup;
 			children = (
-				43658AFB1603174E000F6748 /* AppDelegate.h */,
-				43658AFC1603174E000F6748 /* AppDelegate.m */,
+				43658AFB1603174E000F6748 /* SSCOAppDelegate.h */,
+				43658AFC1603174E000F6748 /* SSCOAppDelegate.m */,
 				FA8764EE160875E400EB1B58 /* Classes */,
 				43658AF31603174E000F6748 /* Supporting Files */,
 			);
@@ -197,10 +201,10 @@
 		43658B3816031D8D000F6748 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				43658B5816032572000F6748 /* SplashViewController.xib */,
-				43658B5116031FE7000F6748 /* NewNoteViewController.xib */,
-				43658B4C16031FC8000F6748 /* NoteDetailsViewController.xib */,
-				43658B3916031D8D000F6748 /* MainViewController.xib */,
+				43658B5816032572000F6748 /* SSCOSplashViewController.xib */,
+				43658B5116031FE7000F6748 /* SSCONewNoteViewController.xib */,
+				43658B4C16031FC8000F6748 /* SSCONoteDetailsViewController.xib */,
+				43658B3916031D8D000F6748 /* SSCOMainViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -228,8 +232,8 @@
 		FA8764F7160875E400EB1B58 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA8764F8160875E400EB1B58 /* MainViewController.h */,
-				FA8764F9160875E400EB1B58 /* MainViewController.m */,
+				FA8764F8160875E400EB1B58 /* SSCOMainViewController.h */,
+				FA8764F9160875E400EB1B58 /* SSCOMainViewController.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -237,8 +241,8 @@
 		FA8764FA160875E400EB1B58 /* NewNoteViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA8764FB160875E400EB1B58 /* NewNoteViewController.h */,
-				FA8764FC160875E400EB1B58 /* NewNoteViewController.m */,
+				FA8764FB160875E400EB1B58 /* SSCONewNoteViewController.h */,
+				FA8764FC160875E400EB1B58 /* SSCONewNoteViewController.m */,
 			);
 			path = NewNoteViewController;
 			sourceTree = "<group>";
@@ -246,8 +250,8 @@
 		FA8764FD160875E400EB1B58 /* NoteDetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA8764FE160875E400EB1B58 /* NoteDetailsViewController.h */,
-				FA8764FF160875E400EB1B58 /* NoteDetailsViewController.m */,
+				FA8764FE160875E400EB1B58 /* SSCONoteDetailsViewController.h */,
+				FA8764FF160875E400EB1B58 /* SSCONoteDetailsViewController.m */,
 			);
 			path = NoteDetailsViewController;
 			sourceTree = "<group>";
@@ -255,8 +259,8 @@
 		FA876500160875E400EB1B58 /* SplashViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA876501160875E400EB1B58 /* SplashViewController.h */,
-				FA876502160875E400EB1B58 /* SplashViewController.m */,
+				FA876501160875E400EB1B58 /* SSCOSplashViewController.h */,
+				FA876502160875E400EB1B58 /* SSCOSplashViewController.m */,
 			);
 			path = SplashViewController;
 			sourceTree = "<group>";
@@ -264,8 +268,8 @@
 		FA8765091608762900EB1B58 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				FA876512160877CC00EB1B58 /* DataManager.h */,
-				FA876513160877CC00EB1B58 /* DataManager.m */,
+				FA876512160877CC00EB1B58 /* SSCONotesStorage.h */,
+				FA876513160877CC00EB1B58 /* SSCONotesStorage.m */,
 				FA87650A1608762900EB1B58 /* Views */,
 			);
 			path = Objects;
@@ -306,9 +310,9 @@
 		43658ADF1603174E000F6748 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = RS;
+				CLASSPREFIX = SSCO;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = Ruslan;
+				ORGANIZATIONNAME = QuickBlox;
 			};
 			buildConfigurationList = 43658AE21603174E000F6748 /* Build configuration list for PBXProject "SimpleSample-custom-object-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -333,11 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43658AF71603174E000F6748 /* InfoPlist.strings in Resources */,
-				43658B3B16031D8D000F6748 /* MainViewController.xib in Resources */,
+				43658B3B16031D8D000F6748 /* SSCOMainViewController.xib in Resources */,
 				BF6860EB1976C36000496FFB /* Images.xcassets in Resources */,
-				43658B4E16031FC8000F6748 /* NoteDetailsViewController.xib in Resources */,
-				43658B5316031FE7000F6748 /* NewNoteViewController.xib in Resources */,
-				43658B5A16032572000F6748 /* SplashViewController.xib in Resources */,
+				43658B4E16031FC8000F6748 /* SSCONoteDetailsViewController.xib in Resources */,
+				43658B5316031FE7000F6748 /* SSCONewNoteViewController.xib in Resources */,
+				43658B5A16032572000F6748 /* SSCOSplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,13 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				43658AF91603174E000F6748 /* main.m in Sources */,
-				43658AFD1603174E000F6748 /* AppDelegate.m in Sources */,
-				FA876505160875E400EB1B58 /* MainViewController.m in Sources */,
-				FA876506160875E400EB1B58 /* NewNoteViewController.m in Sources */,
-				FA876507160875E400EB1B58 /* NoteDetailsViewController.m in Sources */,
-				FA876508160875E400EB1B58 /* SplashViewController.m in Sources */,
+				43658AFD1603174E000F6748 /* SSCOAppDelegate.m in Sources */,
+				FA876505160875E400EB1B58 /* SSCOMainViewController.m in Sources */,
+				FA876506160875E400EB1B58 /* SSCONewNoteViewController.m in Sources */,
+				FA876507160875E400EB1B58 /* SSCONoteDetailsViewController.m in Sources */,
+				FA876508160875E400EB1B58 /* SSCOSplashViewController.m in Sources */,
 				FA87650D1608762900EB1B58 /* CustomTableViewCell.m in Sources */,
-				FA876514160877CC00EB1B58 /* DataManager.m in Sources */,
+				FA876514160877CC00EB1B58 /* SSCONotesStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,11 +447,16 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSample-custom-object-ios/SimpleSample-custom-object-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "SimpleSample-custom-object-ios/SimpleSample-custom-object-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
@@ -462,7 +471,7 @@
 				);
 				PRODUCT_NAME = Custom;
 				PROVISIONING_PROFILE = "800A6590-3F7C-43E1-85E7-EA207E320634";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "800A6590-3F7C-43E1-85E7-EA207E320634";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7C10F44D-9DA6-469F-92B5-FEA785098661";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -477,11 +486,16 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khomenko Igor (67859YS754)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSample-custom-object-ios/SimpleSample-custom-object-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "SimpleSample-custom-object-ios/SimpleSample-custom-object-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (

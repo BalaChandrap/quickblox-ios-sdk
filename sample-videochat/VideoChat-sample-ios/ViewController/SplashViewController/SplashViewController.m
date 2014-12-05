@@ -31,10 +31,17 @@
     //
     // Create extended session request with user authorization
     //
-    QBASessionCreationRequest *extendedAuthRequest = [QBASessionCreationRequest request];
-    extendedAuthRequest.userLogin = appDelegate.testOpponents[0];
-    extendedAuthRequest.userPassword = appDelegate.testOpponents[1];
-    [QBAuth createSessionWithExtendedRequest:extendedAuthRequest delegate:self];
+    QBSessionParameters *parameters = [QBSessionParameters new];
+    parameters.userLogin = appDelegate.testOpponents[0];
+    parameters.userPassword = appDelegate.testOpponents[1];
+    
+    // QuickBlox session creation
+    [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
+        [self loginToChat:session];
+        
+    } errorBlock:[self handleError]];
+    
+    
     
     [activityIndicator startAnimating];
     
@@ -50,10 +57,15 @@
     //
     // Create extended session request with user authorization
     //
-    QBASessionCreationRequest *extendedAuthRequest = [QBASessionCreationRequest request];
-    extendedAuthRequest.userLogin = appDelegate.testOpponents[3];
-    extendedAuthRequest.userPassword = appDelegate.testOpponents[4];
-    [QBAuth createSessionWithExtendedRequest:extendedAuthRequest delegate:self];
+    QBSessionParameters *parameters = [QBSessionParameters new];
+    parameters.userLogin = appDelegate.testOpponents[3];
+    parameters.userPassword = appDelegate.testOpponents[4];
+    
+    // QuickBlox session creation
+    [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
+        [self loginToChat:session];
+        
+    } errorBlock:[self handleError]];
     
     [activityIndicator startAnimating];
     
@@ -61,40 +73,35 @@
     loginAsUser2Button.enabled = NO;
 }
 
+- (void(^)(QBResponse *))handleError
+{
+    return ^(QBResponse *response) {
+        loginAsUser1Button.enabled = YES;
+        loginAsUser2Button.enabled = YES;
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
+                                                        message:[response.error description]
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"OK", "")
+                                              otherButtonTitles:nil];
+        [alert show];
+    };
+}
 
-#pragma mark -
-#pragma mark QBActionStatusDelegate
-
-// QuickBlox API queries delegate
-- (void)completedWithResult:(Result *)result{
+- (void)loginToChat:(QBASession *)session{
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
-    // QuickBlox session creation  result
-    if([result isKindOfClass:[QBAAuthSessionCreationResult class]]){
-        
-        // Success result
-        if(result.success){
-            
-            // Set QuickBlox Chat delegate
-            //
-            [QBChat instance].delegate = self;
-            
-            QBUUser *user = [QBUUser user];
-            user.ID = ((QBAAuthSessionCreationResult *)result).session.userID;
-            user.password = appDelegate.currentUser == 1 ? appDelegate.testOpponents[1] : appDelegate.testOpponents[4];
-            
-            // Login to QuickBlox Chat
-            //
-            [[QBChat instance] loginWithUser:user];
-        }else{
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[[result errors] description] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-            [alert show];
-            
-            loginAsUser1Button.enabled = YES;
-            loginAsUser2Button.enabled = YES;
-        }
-    }
+    // Set QuickBlox Chat delegate
+    //
+    [QBChat instance].delegate = self;
+    
+    QBUUser *user = [QBUUser user];
+    user.ID = session.userID;
+    user.password = appDelegate.currentUser == 1 ? appDelegate.testOpponents[1] : appDelegate.testOpponents[4];
+    
+    // Login to QuickBlox Chat
+    //
+    [[QBChat instance] loginWithUser:user];
 }
 
 

@@ -18,11 +18,22 @@
 		43774BDE160893D500DDBF12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43774BDD160893D500DDBF12 /* UIKit.framework */; };
 		43774BE0160893D500DDBF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43774BDF160893D500DDBF12 /* Foundation.framework */; };
 		43774BE2160893D500DDBF12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43774BE1160893D500DDBF12 /* CoreGraphics.framework */; };
+		55FE969619E6B9660009FA7C /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6860FC197814B200496FFB /* Quickblox.framework */; };
+		7208BD0D93744996AA2DF1F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D6A055B51645A8BA6EBC02 /* libPods.a */; };
+		BF0576BD19D1D20700EB6386 /* CaptureSessionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF0576BA19D1D20700EB6386 /* CaptureSessionManager.mm */; };
+		BF0576BE19D1D20700EB6386 /* MediaFileMerger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0576BC19D1D20700EB6386 /* MediaFileMerger.m */; };
+		BF0576C019D1FF2300EB6386 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0576BF19D1FF2300EB6386 /* MediaPlayer.framework */; };
 		BF67F8581843F6410066F4C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF67F8571843F6410066F4C9 /* Security.framework */; };
 		BF6860FB1978142500496FFB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6860FA1978142500496FFB /* Media.xcassets */; };
-		BF6860FD197814B200496FFB /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6860FC197814B200496FFB /* Quickblox.framework */; };
-		BFE0FF551886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FF521886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.mm */; };
-		BFE0FF561886A6A3002BCDC1 /* TPCircularBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FF541886A6A3002BCDC1 /* TPCircularBuffer.mm */; };
+		BF7CE7C819D31185004CCC19 /* OpponentVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7CE7C719D31185004CCC19 /* OpponentVideoView.m */; };
+		BF7CE7CC19D3166A004CCC19 /* OpponentVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7CE7CB19D3166A004CCC19 /* OpponentVideoWriter.m */; };
+		BFE69A8D19D1A56500940907 /* AQRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A7D19D1A56500940907 /* AQRecorder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BFE69A8E19D1A56500940907 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A7F19D1A56500940907 /* CADebugMacros.cpp */; };
+		BFE69A8F19D1A56500940907 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A8119D1A56500940907 /* CADebugPrintf.cpp */; };
+		BFE69A9019D1A56500940907 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A8419D1A56500940907 /* CAStreamBasicDescription.cpp */; };
+		BFE69A9119D1A56500940907 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A8619D1A56500940907 /* CAXException.cpp */; };
+		BFE69A9219D1A56500940907 /* TPCircularBuffer+AudioBufferList.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A8A19D1A56500940907 /* TPCircularBuffer+AudioBufferList.mm */; };
+		BFE69A9319D1A56500940907 /* TPCircularBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFE69A8C19D1A56500940907 /* TPCircularBuffer.mm */; };
 		FA078F7C16C94833003E8E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA078F6216C94833003E8E5A /* AppDelegate.m */; };
 		FA078F7D16C94833003E8E5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA078F6316C94833003E8E5A /* InfoPlist.strings */; };
 		FA078F7E16C94833003E8E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA078F6516C94833003E8E5A /* main.m */; };
@@ -40,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20E9F892DF102E7D7D23A0E7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E11C4D36C4A0109B08ED417 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		434E9CC81608A01F00A4FB2D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		434E9CCA1608A02E00A4FB2D /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		434E9CCC1608A03E00A4FB2D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -52,13 +65,34 @@
 		43774BDD160893D500DDBF12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43774BDF160893D500DDBF12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43774BE1160893D500DDBF12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8D6A055B51645A8BA6EBC02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0576B919D1D20700EB6386 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		BF0576BA19D1D20700EB6386 /* CaptureSessionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaptureSessionManager.mm; sourceTree = "<group>"; };
+		BF0576BB19D1D20700EB6386 /* MediaFileMerger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFileMerger.h; sourceTree = "<group>"; };
+		BF0576BC19D1D20700EB6386 /* MediaFileMerger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFileMerger.m; sourceTree = "<group>"; };
+		BF0576BF19D1FF2300EB6386 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		BF67F8571843F6410066F4C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF6860FA1978142500496FFB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		BF6860FC197814B200496FFB /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
-		BFE0FF511886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
-		BFE0FF521886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "TPCircularBuffer+AudioBufferList.mm"; sourceTree = "<group>"; };
-		BFE0FF531886A6A3002BCDC1 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
-		BFE0FF541886A6A3002BCDC1 /* TPCircularBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TPCircularBuffer.mm; sourceTree = "<group>"; };
+		BF7CE7C619D31185004CCC19 /* OpponentVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentVideoView.h; sourceTree = "<group>"; };
+		BF7CE7C719D31185004CCC19 /* OpponentVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpponentVideoView.m; sourceTree = "<group>"; };
+		BF7CE7CA19D3166A004CCC19 /* OpponentVideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentVideoWriter.h; sourceTree = "<group>"; };
+		BF7CE7CB19D3166A004CCC19 /* OpponentVideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpponentVideoWriter.m; sourceTree = "<group>"; };
+		BFE69A7C19D1A56500940907 /* AQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRecorder.h; sourceTree = "<group>"; };
+		BFE69A7D19D1A56500940907 /* AQRecorder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQRecorder.mm; sourceTree = "<group>"; };
+		BFE69A7F19D1A56500940907 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		BFE69A8019D1A56500940907 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		BFE69A8119D1A56500940907 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		BFE69A8219D1A56500940907 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		BFE69A8319D1A56500940907 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		BFE69A8419D1A56500940907 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		BFE69A8519D1A56500940907 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		BFE69A8619D1A56500940907 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		BFE69A8719D1A56500940907 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		BFE69A8919D1A56500940907 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		BFE69A8A19D1A56500940907 /* TPCircularBuffer+AudioBufferList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "TPCircularBuffer+AudioBufferList.mm"; sourceTree = "<group>"; };
+		BFE69A8B19D1A56500940907 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		BFE69A8C19D1A56500940907 /* TPCircularBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TPCircularBuffer.mm; sourceTree = "<group>"; };
 		FA078F6116C94833003E8E5A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA078F6216C94833003E8E5A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA078F6416C94833003E8E5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -85,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0576C019D1FF2300EB6386 /* MediaPlayer.framework in Frameworks */,
 				BF67F8581843F6410066F4C9 /* Security.framework in Frameworks */,
 				FAFF373916C2BF4100676978 /* AudioToolbox.framework in Frameworks */,
 				FAFF373716C2BF0500676978 /* Accelerate.framework in Frameworks */,
@@ -103,7 +138,8 @@
 				43774BDE160893D500DDBF12 /* UIKit.framework in Frameworks */,
 				43774BE0160893D500DDBF12 /* Foundation.framework in Frameworks */,
 				43774BE2160893D500DDBF12 /* CoreGraphics.framework in Frameworks */,
-				BF6860FD197814B200496FFB /* Quickblox.framework in Frameworks */,
+				7208BD0D93744996AA2DF1F4 /* libPods.a in Frameworks */,
+				55FE969619E6B9660009FA7C /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +154,7 @@
 				FA078F8C16C94869003E8E5A /* Resources */,
 				43774BDC160893D500DDBF12 /* Frameworks */,
 				43774BDA160893D500DDBF12 /* Products */,
+				C529A269DF139E7FA9A0F0C0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +169,7 @@
 		43774BDC160893D500DDBF12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF0576BF19D1FF2300EB6386 /* MediaPlayer.framework */,
 				BF6860FC197814B200496FFB /* Quickblox.framework */,
 				BF67F8571843F6410066F4C9 /* Security.framework */,
 				FAFF373816C2BF4100676978 /* AudioToolbox.framework */,
@@ -151,19 +189,95 @@
 				43774BDD160893D500DDBF12 /* UIKit.framework */,
 				43774BDF160893D500DDBF12 /* Foundation.framework */,
 				43774BE1160893D500DDBF12 /* CoreGraphics.framework */,
+				A8D6A055B51645A8BA6EBC02 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFE0FF501886A6A3002BCDC1 /* TPCircularBuffer */ = {
+		BF0576B819D1D20700EB6386 /* AudioVideoCapture */ = {
 			isa = PBXGroup;
 			children = (
-				BFE0FF511886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.h */,
-				BFE0FF521886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.mm */,
-				BFE0FF531886A6A3002BCDC1 /* TPCircularBuffer.h */,
-				BFE0FF541886A6A3002BCDC1 /* TPCircularBuffer.mm */,
+				BF0576B919D1D20700EB6386 /* CaptureSessionManager.h */,
+				BF0576BA19D1D20700EB6386 /* CaptureSessionManager.mm */,
+				BF0576BB19D1D20700EB6386 /* MediaFileMerger.h */,
+				BF0576BC19D1D20700EB6386 /* MediaFileMerger.m */,
+			);
+			path = AudioVideoCapture;
+			sourceTree = "<group>";
+		};
+		BF7CE7C519D31177004CCC19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF7CE7C619D31185004CCC19 /* OpponentVideoView.h */,
+				BF7CE7C719D31185004CCC19 /* OpponentVideoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF7CE7C919D3165C004CCC19 /* OpponentVideoWriter */ = {
+			isa = PBXGroup;
+			children = (
+				BF7CE7CA19D3166A004CCC19 /* OpponentVideoWriter.h */,
+				BF7CE7CB19D3166A004CCC19 /* OpponentVideoWriter.m */,
+			);
+			path = OpponentVideoWriter;
+			sourceTree = "<group>";
+		};
+		BFE69A7A19D1A56500940907 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				BF7CE7C919D3165C004CCC19 /* OpponentVideoWriter */,
+				BF0576B819D1D20700EB6386 /* AudioVideoCapture */,
+				BFE69A7B19D1A56500940907 /* AudioFileWriter */,
+				BFE69A8819D1A56500940907 /* TPCircularBuffer */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		BFE69A7B19D1A56500940907 /* AudioFileWriter */ = {
+			isa = PBXGroup;
+			children = (
+				BFE69A7C19D1A56500940907 /* AQRecorder.h */,
+				BFE69A7D19D1A56500940907 /* AQRecorder.mm */,
+				BFE69A7E19D1A56500940907 /* PublicUtility */,
+			);
+			path = AudioFileWriter;
+			sourceTree = "<group>";
+		};
+		BFE69A7E19D1A56500940907 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				BFE69A7F19D1A56500940907 /* CADebugMacros.cpp */,
+				BFE69A8019D1A56500940907 /* CADebugMacros.h */,
+				BFE69A8119D1A56500940907 /* CADebugPrintf.cpp */,
+				BFE69A8219D1A56500940907 /* CADebugPrintf.h */,
+				BFE69A8319D1A56500940907 /* CAMath.h */,
+				BFE69A8419D1A56500940907 /* CAStreamBasicDescription.cpp */,
+				BFE69A8519D1A56500940907 /* CAStreamBasicDescription.h */,
+				BFE69A8619D1A56500940907 /* CAXException.cpp */,
+				BFE69A8719D1A56500940907 /* CAXException.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+		BFE69A8819D1A56500940907 /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				BFE69A8919D1A56500940907 /* TPCircularBuffer+AudioBufferList.h */,
+				BFE69A8A19D1A56500940907 /* TPCircularBuffer+AudioBufferList.mm */,
+				BFE69A8B19D1A56500940907 /* TPCircularBuffer.h */,
+				BFE69A8C19D1A56500940907 /* TPCircularBuffer.mm */,
 			);
 			path = TPCircularBuffer;
+			sourceTree = "<group>";
+		};
+		C529A269DF139E7FA9A0F0C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E9F892DF102E7D7D23A0E7 /* Pods.debug.xcconfig */,
+				2E11C4D36C4A0109B08ED417 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FA078F6016C94833003E8E5A /* VideoChat-sample-ios */ = {
@@ -171,7 +285,8 @@
 			children = (
 				FA078F6116C94833003E8E5A /* AppDelegate.h */,
 				FA078F6216C94833003E8E5A /* AppDelegate.m */,
-				BFE0FF501886A6A3002BCDC1 /* TPCircularBuffer */,
+				BF7CE7C519D31177004CCC19 /* View */,
+				BFE69A7A19D1A56500940907 /* External */,
 				FA078F7316C94833003E8E5A /* ViewController */,
 			);
 			path = "VideoChat-sample-ios";
@@ -243,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43774BF3160893D500DDBF12 /* Build configuration list for PBXNativeTarget "VideoChat" */;
 			buildPhases = (
+				D856066CEABD47C18E6EF6A3 /* Check Pods Manifest.lock */,
 				43774BD5160893D500DDBF12 /* Sources */,
 				43774BD6160893D500DDBF12 /* Frameworks */,
 				43774BD7160893D500DDBF12 /* Resources */,
+				E5086F4BD27045FEA9B512FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,7 +379,7 @@
 		43774BD0160893D500DDBF12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Ruslan;
 				TargetAttributes = {
 					43774BD8160893D500DDBF12 = {
@@ -302,16 +419,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D856066CEABD47C18E6EF6A3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5086F4BD27045FEA9B512FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43774BD5160893D500DDBF12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE0FF561886A6A3002BCDC1 /* TPCircularBuffer.mm in Sources */,
-				BFE0FF551886A6A3002BCDC1 /* TPCircularBuffer+AudioBufferList.mm in Sources */,
+				BFE69A9119D1A56500940907 /* CAXException.cpp in Sources */,
+				BF7CE7C819D31185004CCC19 /* OpponentVideoView.m in Sources */,
 				FA078F7C16C94833003E8E5A /* AppDelegate.m in Sources */,
 				FA078F7E16C94833003E8E5A /* main.m in Sources */,
+				BF0576BD19D1D20700EB6386 /* CaptureSessionManager.mm in Sources */,
+				BFE69A8D19D1A56500940907 /* AQRecorder.mm in Sources */,
+				BFE69A9019D1A56500940907 /* CAStreamBasicDescription.cpp in Sources */,
+				BFE69A9219D1A56500940907 /* TPCircularBuffer+AudioBufferList.mm in Sources */,
+				BF0576BE19D1D20700EB6386 /* MediaFileMerger.m in Sources */,
+				BF7CE7CC19D3166A004CCC19 /* OpponentVideoWriter.m in Sources */,
 				FA078F8816C94833003E8E5A /* MainViewController.mm in Sources */,
+				BFE69A8E19D1A56500940907 /* CADebugMacros.cpp in Sources */,
+				BFE69A8F19D1A56500940907 /* CADebugPrintf.cpp in Sources */,
+				BFE69A9319D1A56500940907 /* TPCircularBuffer.mm in Sources */,
 				FA078F8A16C94833003E8E5A /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,10 +498,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Taras Filatov (6AVH4TA956)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -382,10 +543,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Injoit LTD";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Injoit LTD";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -409,34 +572,33 @@
 		};
 		43774BF4160893D500DDBF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E9F892DF102E7D7D23A0E7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khomenko Igor (67859YS754)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../Framework\"",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/andrey/Projects/quickblox-ios-sdk/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoChat-sample-ios/videoChat-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "VideoChat-sample-ios/videoChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = (
-					"-lxml2",
-					"-ObjC",
-					"-lstdc++",
-				);
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-lxml2",
-					"-ObjC",
-					"-lstdc++",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_NAME = VideoChat;
-				PROVISIONING_PROFILE = "4A7273D7-268E-4266-B796-A8956D96DE97";
+				PROVISIONING_PROFILE = "52a0a30c-4e31-4ee7-a45c-ab85b421f22a";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,6 +606,7 @@
 		};
 		43774BF5160893D500DDBF12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E11C4D36C4A0109B08ED417 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -455,19 +618,21 @@
 					"\"$(SRCROOT)/../Framework\"",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/andrey/Projects/quickblox-ios-sdk/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoChat-sample-ios/videoChat-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "VideoChat-sample-ios/videoChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = (
-					"-lxml2",
-					"-ObjC",
-					"-lstdc++",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = VideoChat;
-				PROVISIONING_PROFILE = "E65F6C59-7597-41F2-9A02-B0453D6532AF";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6CD57DC1-6F15-4610-A610-90E56209EAF7";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

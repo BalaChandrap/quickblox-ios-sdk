@@ -61,7 +61,6 @@
         self.chatRoom = [self.dialog chatRoom];
         [[ChatService instance] joinRoom:self.chatRoom completionBlock:^(QBChatRoom *joinedChatRoom) {
             // joined
-            NSLog(@"joined");
         }];
     }
     
@@ -245,6 +244,7 @@
         [self.messages addObjectsFromArray:[messages mutableCopy]];
         //
         [self.messagesTableView reloadData];
+        [self.messagesTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.messages.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
     }
 }
 

@@ -12,13 +12,14 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "OpponentVideoView.h"
 
 @interface MainViewController : UIViewController <QBChatDelegate, AVAudioPlayerDelegate, UIAlertViewDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>{
     IBOutlet UIButton *callButton;
     IBOutlet UILabel *ringigngLabel;
     IBOutlet UIActivityIndicatorView *callingActivityIndicator;
     IBOutlet UIActivityIndicatorView *startingCallActivityIndicator;
-    IBOutlet UIImageView *opponentVideoView;
+    IBOutlet OpponentVideoView *opponentVideoView;
     IBOutlet UIImageView *myVideoView;
     IBOutlet UINavigationBar *navBar;
     IBOutlet UISegmentedControl *audioOutput;
@@ -35,7 +36,6 @@
 @property (strong) NSNumber *opponentID;
 @property (strong) QBVideoChat *videoChat;
 @property (strong) UIAlertView *callAlert;
-@property (strong) AVCaptureSession *captureSession;
 
 - (IBAction)call:(id)sender;
 - (void)reject;
